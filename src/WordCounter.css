@@ -1,0 +1,19 @@
+h1 {
+	color: #fff;
+	font-size: 42px;
+	text-shadow: 3px 3px 0px #000;
+}
+
+/* Tablet Sizes */
+@media all and (min-width: 768px) {
+	h1 {
+		font-size: 46px;
+	}
+}
+
+/* Large: min-width 992px  - container max-width: 800px */
+@media all and (min-width: 992px) {
+	h1 {
+		font-size: 50px;
+	}
+}

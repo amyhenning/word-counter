@@ -1,0 +1,46 @@
+textarea {
+	width: 300px;
+	height: 150px;
+	background-color: #efefef;
+	border: none;
+	border-radius: 0.25em;
+	padding: 5px;
+	resize: none;
+	font-family: 'Courier';
+	font-size: 16px;
+}
+
+textarea:focus {
+	outline: none; 
+}
+
+.button {
+	color: #000;
+	background-color: #efefef;
+	padding: 5px;
+	border: none;
+	border-radius: 0.25em;
+	font-size: 16px;
+	font-family: 'Courier', 'monospace';
+	cursor: pointer;
+}
+
+/* Tablet Sizes */
+@media all and (min-width: 768px) {
+	textarea {
+		width: 600px;
+		height: 300px;
+		padding: 8px;
+		font-size: 16px;
+	}
+}
+
+/* Large: min-width 992px  - container max-width: 800px */
+@media all and (min-width: 992px) {
+	textarea {
+		width: 800px;
+		height: 400px;
+		padding: 10px;
+		font-size: 18px;
+	}
+}
