@@ -9,7 +9,7 @@ function CountInfo(props) {
 
 	function wordCounter(text) {
 		const ellipsis = RegExp(/\.\s?\.\s?\.?/g);
-		const dash = RegExp(/\s\u2013|\u2014|\-\s/g);
+		const dash = RegExp(/\s\u2013|\u2014|-\s/g);
 		let words = text.trim().replace(dash, '').replace(ellipsis, '').replace(spaces, ' ').split(' ');
 		return words.length;
 	}
