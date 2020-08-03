@@ -5,22 +5,22 @@ function CountInfo(props) {
 
 	// TODO: Get rid of punctuation marks surrounded by spaces
 	// or maybe just all punctuation marks...
-	const spaces = RegExp(/[\r\s]+/g);
+	const allSpaceTypes = RegExp(/[\r\s]+/g);
 
 	function wordCounter(text) {
 		const ellipsis = RegExp(/\.\s?\.\s?\.?/g);
 		const dash = RegExp(/\s\u2013|\u2014|-\s/g);
-		let words = text.trim().replace(dash, '').replace(ellipsis, '').replace(spaces, ' ').split(' ');
+		let words = text.replace(dash, '').replace(ellipsis, '').trim().replace(allSpaceTypes, ' ').split(' ');
 		return words.length;
 	}
 
 	function characterCounter(text) {
-		let characters = text.trim().replace(spaces, ' ').split('');
+		let characters = text.trim().replace(allSpaceTypes, ' ').split('');
 		return characters.length;
 	}
 
 	function characterCounterWithoutSpaces(text) {
-		let characters = text.trim().replace(spaces, '').split('');
+		let characters = text.trim().replace(allSpaceTypes, '').split('');
 		return characters.length;
 	}
 
